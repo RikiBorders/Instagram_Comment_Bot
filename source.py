@@ -7,6 +7,14 @@ import random
 import shared
 from interface import *
 
+'''
+Developed independently by Riki Borders.
+Development start: 5/23/2020
+Source code containing bot class and associated methods. 
+Auxiliary functions included in the interface.py file,
+along with front end GUI code.
+'''
+
 
 class CommentBot():
 
