@@ -1,0 +1,19 @@
+import mysql.connector
+
+database = mysql.connector.connect(host="redacted",
+                                   user="redacted",
+                                   passwd="redacted",
+                                   database="redacted")
+
+data_cursor = database.cursor()
+
+#For whatever reason, you need to set the increments when using mysql.connector.
+#If you don't do this, the increment values are corrupted
+data_cursor.execute("ALTER TABLE client AUTO_INCREMENT=1")
+data_cursor.execute("SET @@auto_increment_increment=1")
+
+
+
+database.commit()
+data_cursor.close()
+database.close()

@@ -1,0 +1,7 @@
+mode=feed
+emulation_flag=True
+refresh_timer=12.0
+feed_behavior=top
+post_age_limit=60
+account_swap_timer=1800
+fullscreen=False
