@@ -1,5 +1,5 @@
 # IG_CommentBot
-DESCRIPTION:
+-----DESCRIPTION:
 Instagram Comment bot formerly sold as the 'RKAB Comment bot'. This bot is a web-scraping based comment bot with several key modes that allow users to automate commenting on the social media platform.
 
 This bot uses Python, and is connected to a MySQL database that holds client information, including their license keys which are used to run the bot. The databse tracks the bot's host computer's unique ID in order to identify if the machine can be given permission to run the software. If the databse ID does not match the computer's, then the software will not fully load the interface, thus preventing the bot from being properly run (assuming the bot is being run through as an exe). If an invalid license key is used, or a license key is not provided, the bot will not run. For security reasons, aspects of the licensing system have been omitted from this repository in order to keep sensitive data hidden. 
@@ -9,23 +9,33 @@ The comment bot itself uses selenium as its way of accessing and parsing the htm
 
 
 
-FILES:
+-----FILES:
 
 installer.py - Installer used to authenticate bot copies by connecting to and verifying licenses in the user database
+
 database_functions.py - Contains some functions used to connect to the user database
+
 interface.py - Interface displayed to the user. Contains functionalities that support customization of bot behavior, account information, and many other functionalities.
+
 shared.py - small collection of variables and data to faciliate communication of data shared between the GUI and bot
+
 source.py - Source code containing the functions used to navigate and comment on the instagram website, as well as a bot class containing the majority of the bot functionalities.
 
 accounts.txt - Accounts the user has inputted for the bot to use for commenting purposes
+
 commented_posts.txt - Posts the bot has located in the feed, and already commented on.
+
 comments.txt - Contains a collection of comments the bot will pull from at random when commenting on a post.
+
 config.txt - Settings allowing for the user to customize bot behavior.
+
 hashtags.txt - collection of hashtags the bot will use in conjunction with 'hashtag' mode
+
 sources.txt - Collection of unique source tags/links the bot has saved after commenting on posts using modes that are not 'feed' mode
+
 target_accounts.txt - Accounts whos posts the bot will comment on when using 'account' mode
 
-DEPENDENCIES:
+-----DEPENDENCIES:
 
 Several python libraries are used, which can be found at the top of each python file. Software-wise, the bot requires the appropriate
 version of Chromedriver in the bot directory in order to run the bot. The appropriate version of Chrome driver can be found by downloading and using the 
