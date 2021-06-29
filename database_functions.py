@@ -7,8 +7,8 @@ database = mysql.connector.connect(host="redacted",
 
 data_cursor = database.cursor()
 
-#For whatever reason, you need to set the increments when using mysql.connector.
-#If you don't do this, the increment values are corrupted
+#You need to set the increments when using mysql.connector.
+#If you don't do this, the increment values are corrupted for unknown reasons.
 data_cursor.execute("ALTER TABLE client AUTO_INCREMENT=1")
 data_cursor.execute("SET @@auto_increment_increment=1")
 
