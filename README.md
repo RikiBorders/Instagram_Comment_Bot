@@ -1,5 +1,6 @@
 # IG_CommentBot
 -----DESCRIPTION:
+
 Instagram Comment bot formerly sold as the 'RKAB Comment bot'. This bot is a web-scraping based comment bot with several key modes that allow users to automate commenting on the social media platform.
 
 This bot uses Python, and is connected to a MySQL database that holds client information, including their license keys which are used to run the bot. The databse tracks the bot's host computer's unique ID in order to identify if the machine can be given permission to run the software. If the databse ID does not match the computer's, then the software will not fully load the interface, thus preventing the bot from being properly run (assuming the bot is being run through as an exe). If an invalid license key is used, or a license key is not provided, the bot will not run. For security reasons, aspects of the licensing system have been omitted from this repository in order to keep sensitive data hidden. 
@@ -42,4 +43,4 @@ version of Chromedriver in the bot directory in order to run the bot. The approp
 version of Chromedriver that matches the user's downloaded version of Google Chrome. Alternatively, another webdriver can theoretically be used if the user
 has the alternative webdriver in the bot directory, and matching internet browser installed. Alternatives to Google chrome have not been tested.
 
-In order to be run on Mac, an exe can be made on a Mac operating system, or virtual machine running MACOS. Note that python must still be installed on the machine. 
+In order to be run on Mac, an exe can be made on a Mac operating system, or virtual machine running MACOS. Note that python must still be installed on the machine. When creating exe files for distribution, pyinstaller is my preffered method of creating an exe for the program. All dependencies are converted, and all files can be included in a single command. Command prompt can also be hidden from the user.
