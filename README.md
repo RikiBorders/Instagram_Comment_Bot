@@ -1,7 +1,7 @@
 # IG_CommentBot
 -----DESCRIPTION:
 
-Instagram Comment bot formerly sold as the 'RKAB Comment bot'. This bot is a web-scraping based comment bot with several key modes that allow users to automate commenting on the social media platform.
+Instagram Comment bot formerly sold as the 'RKAB Comment bot'. This bot is a web-scraping based comment bot with several key modes that allow users to automate commenting on the social media platform. Utilizes parallel programming and webscraping.
 
 This bot uses Python, and is connected to a MySQL database that holds client information, including their license keys which are used to run the bot. The databse tracks the bot's host computer's unique ID in order to identify if the machine can be given permission to run the software. If the databse ID does not match the computer's, then the software will not fully load the interface, thus preventing the bot from being properly run (assuming the bot is being run through as an exe). If an invalid license key is used, or a license key is not provided, the bot will not run. For security reasons, aspects of the licensing system have been omitted from this repository in order to keep sensitive data hidden. 
 NOTE: License checking has been disabled (commented out) so the bot can actually be run without the user being locked out for having an invalid license.
