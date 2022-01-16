@@ -8,6 +8,7 @@ NOTE: License checking has been disabled (commented out) so the bot can actually
 
 The comment bot itself uses selenium as its way of accessing and parsing the html of the Instagram website. The general tags used for the bot should have a low chance of becoming obsolete, unless some sort of Instagram html update drastically changes the site layout. The tags used to navigate the site have been in use for a little over a year since I have added this project to Github. The frontend of the bot uses the tkinter library, which has the perfect level of functionality and speed for the comment bot program. The layout is simple, with status text that updates/changes in real-time in response to button clicks. The front-end also has functional scroll bars, and auxiliary windows that open panels to view accounts, bot status, and much more. 
 
+NOTE: The MySQL Databases used for this software were developed on MySQL workbench, and have not been uploaded to this repository yet. I am actively considering uploading the Databases used with the software, in addition to auxiliary programs I developed that were previously used to support the logistical side of the RKAB business.
 
 
 -----FILES:
