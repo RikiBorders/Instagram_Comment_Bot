@@ -39,8 +39,6 @@ target_accounts.txt - Accounts whos posts the bot will comment on when using 'ac
 -----DEPENDENCIES:
 
 Several python libraries are used, which can be found at the top of each python file. Software-wise, the bot requires the appropriate
-version of Chromedriver in the bot directory in order to run the bot. The appropriate version of Chrome driver can be found by downloading and using the 
-version of Chromedriver that matches the user's downloaded version of Google Chrome. Alternatively, another webdriver can theoretically be used if the user
-has the alternative webdriver in the bot directory, and matching internet browser installed. Alternatives to Google chrome have not been tested.
+version of [Chromedriver](https://chromedriver.chromium.org/downloads) in the bot's root directory in order to run the bot. The appropriate version of Chrome driver can be found by downloading and using the version of Chromedriver that matches the user's downloaded version of Google Chrome (This can be checked by opening chrome, and navigating to Help->About Google Chrome). Alternatively, another webdriver can theoretically be used if the user has the alternative webdriver in the bot directory, and matching internet browser installed. Alternatives to Google chrome have not been tested.
 
 In order to be run on Mac, an exe can be made on a Mac operating system, or virtual machine running MACOS. Note that python must still be installed on the machine. When creating exe files for distribution, pyinstaller is my preffered method of creating an exe for the program. All dependencies are converted, and all files can be included in a single command. Command prompt can also be hidden from the user.
