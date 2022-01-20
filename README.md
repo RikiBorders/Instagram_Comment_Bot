@@ -1,4 +1,9 @@
 # IG_CommentBot
+
+-----IMPORTANT NOTE:
+
+Though I released the source code for my comment bot, I do not permit the redistribution or sale of my software. I do permit the modificiation of this software for personal or educational use.
+
 -----DESCRIPTION:
 
 Instagram Comment bot formerly sold as the 'RKAB Comment bot'. This bot is a web-scraping based comment bot that utilizes parallel programming with several key modes that allow users to automate commenting on the social media platform.
