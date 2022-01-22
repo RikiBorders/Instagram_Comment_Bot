@@ -16,7 +16,7 @@ The comment bot itself uses selenium as its way of accessing and parsing the htm
 NOTE: The MySQL Databases used for this software were developed on MySQL workbench, and have not been uploaded to this repository yet. I am actively considering uploading the Databases used with the software, in addition to auxiliary programs I developed that were previously used to support the logistical side of the RKAB business.
 
 
-# USAGE
+# USAGE:
 
 To run the bot, simply clone this repository and run interface.py. Don't run installer.py as the installer serves no function if you clone the repository, and won't work anyways. This is because I originally used the installer as a tool to authenticate ownership as a way to prevent piracy.
 Also make sure you review the "Dependencies" section of this readme file and ensure you have the correct version of chrome driver in the bot directory. 
