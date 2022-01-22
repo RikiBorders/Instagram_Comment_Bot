@@ -1,6 +1,6 @@
 # IG_CommentBot
 
-# IMPORTANT NOTE:
+IMPORTANT NOTE:
 
 Though I released the source code for my comment bot, I do not permit the redistribution or sale of my software. I do permit the modificiation of this software for personal or educational use.
 
