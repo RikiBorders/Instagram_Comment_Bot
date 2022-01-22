@@ -1,10 +1,10 @@
 # IG_CommentBot
 
------IMPORTANT NOTE:
+# IMPORTANT NOTE:
 
 Though I released the source code for my comment bot, I do not permit the redistribution or sale of my software. I do permit the modificiation of this software for personal or educational use.
 
------DESCRIPTION:
+# DESCRIPTION:
 
 Instagram Comment bot formerly sold as the 'RKAB Comment bot'. This bot is a web-scraping based comment bot that utilizes parallel programming with several key modes that allow users to automate commenting on the social media platform.
 
@@ -16,7 +16,12 @@ The comment bot itself uses selenium as its way of accessing and parsing the htm
 NOTE: The MySQL Databases used for this software were developed on MySQL workbench, and have not been uploaded to this repository yet. I am actively considering uploading the Databases used with the software, in addition to auxiliary programs I developed that were previously used to support the logistical side of the RKAB business.
 
 
------FILES:
+# USAGE
+
+To run the bot, simply clone this repository and run interface.py. Don't run installer.py as the installer serves no function if you clone the repository, and won't work anyways. This is because I originally used the installer as a tool to authenticate ownership as a way to prevent piracy.
+Also make sure you review the "Dependencies" section of this readme file and ensure you have the correct version of chrome driver in the bot directory. 
+
+# FILES:
 
 installer.py - Installer used to authenticate bot copies by connecting to and verifying licenses in the user database
 
@@ -42,7 +47,7 @@ sources.txt - Collection of unique source tags/links the bot has saved after com
 
 target_accounts.txt - Accounts whos posts the bot will comment on when using 'account' mode
 
------DEPENDENCIES:
+# DEPENDENCIES:
 
 Several python libraries are used, which can be found at the top of each python file. Software-wise, the bot requires the appropriate
 version of [Chromedriver](https://chromedriver.chromium.org/downloads) in the bot's root directory in order to run the bot. The appropriate version of Chrome driver can be found by downloading and using the version of Chromedriver that matches the user's downloaded version of Google Chrome (This can be checked by opening chrome, and navigating to Help->About Google Chrome). Alternatively, another webdriver can theoretically be used if the user has the alternative webdriver in the bot directory, and matching internet browser installed. Alternatives to Google chrome have not been tested.
