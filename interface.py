@@ -1314,6 +1314,10 @@ def popen(cmd: str) -> str:
 
 
 if __name__ == "__main__":
+    
+    
+    main() # This call bypasses any sort of authentication (which is entirely found below)
+    
     #Grab machine uuid & search db for uuid existence.
     machine_id = GetUUID()
     signature = None
