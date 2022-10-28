@@ -2,7 +2,8 @@
 
 IMPORTANT NOTE:
 
-Though I released the source code for my comment bot, I do not permit the redistribution or sale of my software. I do permit the modificiation of this software for personal or educational use.
+Though the source code for this comment bot is available, I don't permit the redistribution of any part of this source code.
+The code in this repository is not longer being maintained. The source code for this project was written in 2020 when I was first learning to program, so there will be a ton of spaghetti in this repository.
 
 # DESCRIPTION:
 
