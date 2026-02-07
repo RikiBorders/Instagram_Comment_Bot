@@ -1,56 +1,55 @@
-# IG_CommentBot
+# README
 
-IMPORTANT NOTE:
+# Overview:
 
-Though the source code for this comment bot is available, I don't permit the redistribution of any part of this source code.
-The code in this repository is not longer being maintained. The source code for this project was written in 2020 when I was first learning to program, so there will be a ton of spaghetti in this repository.
+An autonomous Instagram comment bot that leverages selenium's headless browser and automation features to scrape Instagram, leaving comments on posts using a variety of techniques to maximize traffic flow to user accounts. I formally distributed this software as the 'RKAB Comment Bot' to over 100 unique users, providing live customer support and incremental feature improvement based on user feedback. The tech stack leverages Python for general webscraping abiltiies, while using the tkinter library to power the UI/UX. MySQL is used under the hood to store HWID-based customer license keys which are used to authorize access to the software. The database used to be hosted on-premises, but is no longer active.
 
-# DESCRIPTION:
+This software was developed for Windows, but can be run on Mac by generating an exe file using Wine.
 
-Instagram Comment bot formerly sold as the 'RKAB Comment bot'. This bot is a web-scraping based comment bot that utilizes parallel programming with several key modes that allow users to automate commenting on the social media platform.
-
-This bot uses Python, and is connected to a MySQL database that holds client information, including their license keys which are used to run the bot. The databse tracks the bot's host computer's unique ID in order to identify if the machine can be given permission to run the software. If the databse ID does not match the computer's, then the software will not fully load the interface, thus preventing the bot from being properly run (assuming the bot is being run through as an exe). If an invalid license key is used, or a license key is not provided, the bot will not run. For security reasons, aspects of the licensing system have been omitted from this repository in order to keep sensitive data hidden. 
-NOTE: License checking has been disabled (commented out) so the bot can actually be run without the user being locked out for having an invalid license.
-
-The comment bot itself uses selenium as its way of accessing and parsing the html of the Instagram website. The general tags used for the bot should have a low chance of becoming obsolete, unless some sort of Instagram html update drastically changes the site layout. The tags used to navigate the site have been in use for a little over a year since I have added this project to Github. The frontend of the bot uses the tkinter library, which has the perfect level of functionality and speed for the comment bot program. The layout is simple, with status text that updates/changes in real-time in response to button clicks. The front-end also has functional scroll bars, and auxiliary windows that open panels to view accounts, bot status, and much more. 
-
-NOTE: The MySQL Databases used for this software were developed on MySQL workbench, and have not been uploaded to this repository yet. I am actively considering uploading the Databases used with the software, in addition to auxiliary programs I developed that were previously used to support the logistical side of the RKAB business.
-
+While not captured in this repository, I developed various tools to support the business, including accounting and license management dashboards.
 
 # USAGE:
 
-To run the bot, simply clone this repository and run interface.py. Don't run installer.py as the installer serves no function if you clone the repository, and won't work anyways. This is because I originally used the installer as a tool to authenticate ownership as a way to prevent piracy.
-Also make sure you review the "Dependencies" section of this readme file and ensure you have the correct version of chrome driver in the bot directory. 
+To run this software, clone this repository and run interface.py. Don't run installer.py as it's unneccessary and was originally used to authenticate customer license keys.
 
-# FILES:
+# Files:
 
-installer.py - Installer used to authenticate bot copies by connecting to and verifying licenses in the user database
+**installer.py**
+Handles bot installation and license authentication by verifying users against the license database.
 
-database_functions.py - Contains some functions used to connect to the user database
+**database_functions.py**
+Utility functions for connecting to and interacting with the user database.
 
-interface.py - Interface displayed to the user. Contains functionalities that support customization of bot behavior, account information, and many other functionalities.
+**interface.py**
+User-facing interface that manages bot configuration, account details, and behavioral controls.
 
-shared.py - small collection of variables and data to faciliate communication of data shared between the GUI and bot
+**shared.py:**
+Shared state and constants used to coordinate data between the GUI and bot logic.
 
-source.py - Source code containing the functions used to navigate and comment on the instagram website, as well as a bot class containing the majority of the bot functionalities.
+**source.py:**
+Core bot implementation, including Instagram navigation, commenting logic, and the primary bot class.
 
-accounts.txt - Accounts the user has inputted for the bot to use for commenting purposes
+**accounts.txt:**
+List of Instagram accounts provided by the user for automated commenting.
 
-commented_posts.txt - Posts the bot has located in the feed, and already commented on.
+**commented_posts.txt:**
+Records posts that have already been processed and commented on to prevent duplicates.
 
-comments.txt - Contains a collection of comments the bot will pull from at random when commenting on a post.
+**comments.txt:**
+Pool of comments randomly selected by the bot when posting.
 
-config.txt - Settings allowing for the user to customize bot behavior.
+**config.txt:**
+Configuration file defining user-customizable bot settings and behavior.
 
-hashtags.txt - collection of hashtags the bot will use in conjunction with 'hashtag' mode
+**hashtags.txt:**
+Hashtags used by the bot when operating in hashtag mode.
 
-sources.txt - Collection of unique source tags/links the bot has saved after commenting on posts using modes that are not 'feed' mode
+**sources.txt:**
+Stored source links or identifiers collected when commenting outside of feed mode.
 
-target_accounts.txt - Accounts whos posts the bot will comment on when using 'account' mode
+**target_accounts.txt:**
+Target Instagram accounts whose posts are commented on in account mode.
 
-# DEPENDENCIES:
+# Dependency Notes:
 
-Several python libraries are used, which can be found at the top of each python file. Software-wise, the bot requires the appropriate
-version of [Chromedriver](https://chromedriver.chromium.org/downloads) in the bot's root directory in order to run the bot. The appropriate version of Chrome driver can be found by downloading and using the version of Chromedriver that matches the user's downloaded version of Google Chrome (This can be checked by opening chrome, and navigating to Help->About Google Chrome). Alternatively, another webdriver can theoretically be used if the user has the alternative webdriver in the bot directory, and matching internet browser installed. Alternatives to Google chrome have not been tested.
-
-In order to be run on Mac, an exe can be made on a Mac operating system, or virtual machine running MACOS. Note that python must still be installed on the machine. When creating exe files for distribution, pyinstaller is my preffered method of creating an exe for the program. All dependencies are converted, and all files can be included in a single command. Command prompt can also be hidden from the user.
+This software requires the latest version of [Chromedriver](https://chromedriver.chromium.org/downloads) to be installed in the bot's root directory for the bot to successfully run. Google Chrome must also be installed on the user's machine, and the version of Chrome should match the version of Chromedriver in the bot directory. Alternative drivers (e.g geckodriver) can also be used if preferred.
